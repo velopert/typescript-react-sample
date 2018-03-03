@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Profile from './components/Profile';
-import Counter from './components/Counter';
-import TodoList from './components/TodoList';
+import CounterContainer from './containers/CounterContainer';
+import TodoListContainer from './containers/TodoListContainer';
 
 class App extends React.Component {
   render() {
@@ -11,8 +11,8 @@ class App extends React.Component {
           name="벨로퍼트"
           job="코드사랑꾼"
         />
-        <Counter />
-        <TodoList />
+        <CounterContainer />
+        <TodoListContainer />
       </div>
     );
   }
